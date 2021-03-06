@@ -94,7 +94,6 @@ const Widgets = () => {
           <CWidgetIcon text="income" header="$1.999,50" color="danger" iconPadding={false}>
             <CIcon width={24} name="cil-bell"/>
           </CWidgetIcon>
-            
         </CCol>
         <CCol xs="12" sm="6" lg="4">
           <CWidgetIcon text="income" header="$1.999,50" color="primary" iconPadding={false}>
