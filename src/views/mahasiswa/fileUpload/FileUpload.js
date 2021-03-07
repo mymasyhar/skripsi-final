@@ -1,6 +1,6 @@
 import React, {  } from 'react'
 import {
-    
+    CButton,
     CCard, 
     CCardBody, 
     CCardHeader, 
@@ -29,13 +29,61 @@ const FileUpload = () => {
                     </CCardHeader>
 
                     <CCardBody>
-                        <CForm action="" method="post" encType="multipart/form-data" className="form-horizontal">
-                            <CFormGroup row>
-                                <CLabel col md="3" htmlFor="file-input">File input</CLabel>
-                                <CCol xs="12" md="9">
-                                    <CInputFile type="file" id="file-input" name="file-input"/>
-                                </CCol>
+                        <CForm action="" method="post" encType="multipart/form-data" className="form-horizontal mr-4 ml-4">
+                            <CFormGroup row md="10">
+                                    <CCardBody color="info" className="text-center">
+                                        <CCol>
+                                            <CLabel className="text-white">
+                                                <h4>Scan Berkas A</h4>
+                                            </CLabel>
+                                        </CCol>
+                                        <CCol>
+                                            <CInputFile custom id="file-input"/>
+                                            <CLabel htmlFor="file-input" variant="custom-file">
+                                            Scan Berkas A
+                                            </CLabel>
+                                        </CCol>
+                                    </CCardBody>
                             </CFormGroup>
+
+                            <CFormGroup row md="10">
+                                    <CCardBody color="info" className="text-center">
+                                        <CCol>
+                                            <CLabel className="text-white">
+                                                <h4>Scan Berkas A</h4>
+                                            </CLabel>
+                                        </CCol>
+                                        <CCol>
+                                            <CInputFile custom id="file-input"/>
+                                            <CLabel htmlFor="file-input" variant="custom-file">
+                                            Scan Berkas A
+                                            </CLabel>
+                                        </CCol>
+                                    </CCardBody>
+                            </CFormGroup>
+
+                            <CFormGroup row md="10">
+                                    <CCardBody color="info" className="text-center">
+                                        <CCol>
+                                            <CLabel className="text-white">
+                                                <h4>Scan Berkas A</h4>
+                                            </CLabel>
+                                        </CCol>
+                                        <CCol>
+                                            <CInputFile custom id="file-input"/>
+                                            <CLabel htmlFor="file-input" variant="custom-file">
+                                            Scan Berkas A
+                                            </CLabel>
+                                        </CCol>
+                                    </CCardBody>
+                            </CFormGroup>
+
+                            <CFormGroup row md="10">
+                                    <CCardBody className="text-center">
+                                        <CButton color="info">Submit</CButton>  
+                                    </CCardBody>
+                            </CFormGroup>
+
                         </CForm>
 
                     </CCardBody>
