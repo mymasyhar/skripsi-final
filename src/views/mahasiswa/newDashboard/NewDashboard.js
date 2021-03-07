@@ -1,6 +1,9 @@
 import React, {} from 'react'
 import {
-    CCol, 
+    CCard,
+    CCardHeader,
+    CCardBody,
+    CCol,
     CRow
 } from '@coreui/react'
 
@@ -11,9 +14,18 @@ const NewDashboard = () => {
         <>
             <CRow>
                 <CCol md="12">
-                    <h2>Here We Go, New Dashboard !</h2>
+                    <CCard color="info" className="text-white">
+                        <div className="text-left mt-4 mb-0 ml-4">
+                            <img src={'avatars/8.jpg'} alt="admin@bootstrapmaster.com" />
+                        </div>
+                        <CCardBody>
+                        
+                        </CCardBody>
+                    </CCard>
                 </CCol>
             </CRow>
+
+            
         </>
     )
 }
