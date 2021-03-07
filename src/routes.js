@@ -8,7 +8,7 @@ const NewDashboard  = React.lazy(() => import('./views/mahasiswa/newDashboard/Ne
 const GradRegister  = React.lazy(() => import('./views/mahasiswa/gradRegister/GradRegister'));
 const FileUpload    = React.lazy(() => import('./views/mahasiswa/fileUpload/FileUpload'));
 const GradEquip     = React.lazy(() => import('./views/mahasiswa/gradEquip/GradEquip'));
-const ReturnEquip   = React.lazy(() => import('./views/mahasiswa/gradEquip/ReturnEquip'));
+const GradReturnEquip   = React.lazy(() => import('./views/mahasiswa/gradEquip/GradReturnEquip'));
 
 //petugas administrasi
 const FileVerification  = React.lazy(() => import('./views/petugasAdministrasi/fileVerification/FileVerification'));
@@ -17,6 +17,8 @@ const VerifiedFile      = React.lazy(() => import('./views/petugasAdministrasi/f
 const PendingVerified   = React.lazy(() => import('./views/petugasAdministrasi/fileVerification/PendingVerified'));
 
 const Equip             = React.lazy(() => import('./views/petugasAdministrasi/equip/Equip'));
+const EquipReturn       = React.lazy(() => import('./views/petugasAdministrasi/equip/EquipReturn'));
+
 const ArchivedFile      = React.lazy(() => import('./views/petugasAdministrasi/archivedFile/ArchivedFile'));
 
 //admin
@@ -68,13 +70,14 @@ const routes = [
     { path: '/new-dashboard', name: 'Dashboard', component: NewDashboard },
     { path: '/new-register', name: 'Pendaftaran', component: GradRegister },
     { path: '/new-file-upload', name: 'Unggah Berkas', component: FileUpload },
-    { path: '/new-grad-equip', name: 'Kelengkapan dan Jadwal', component: GradEquip },
-    { path: '/new-return-equip', name: 'Pengembalian Kelengkapan', component: ReturnEquip },
+    { path: '/new-grad-equip', name: 'Pengambilan', component: GradEquip },
+    { path: '/new-return-equip', name: 'Pengembalian', component: GradReturnEquip },
 
 
     //petugas administrasi
     { path: '/file-verification', name: 'Verifikasi Berkas', component: FileVerification },
     { path: '/equip', name: 'Kelengkapan', component: Equip },
+    { path: '/equip-return', name: 'Pengembalian', component: EquipReturn },
     { path: '/archived-file', name: 'Arsip', component: ArchivedFile },
     { path: '/detail-file', name: 'Detail File Pendaftar', component: DetailFile },
     { path: '/verified-file', name: 'Verified File', component: VerifiedFile },

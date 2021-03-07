@@ -19,7 +19,8 @@ const VerifiedFile = () => {
     return (
         <>
             <CCol xs="12" md="12">
-                <h3>Verifikasi Berkas Pendaftaran Wisuda, Tahun : 2021</h3>
+                <h3>Verifikasi Berkas Pendaftaran Wisuda</h3> 
+                <h4>Tahun : </h4>
                 <h4>Periode : #</h4>
             </CCol>
 

@@ -9,7 +9,7 @@ import {
 } from '@coreui/react'
 // import CIcon from '@coreui/icons-react'
 
-const ReturnEquip = () => {
+const GradReturnEquip = () => {
     return (
         <>
             <CCol xs="12">
@@ -31,4 +31,4 @@ const ReturnEquip = () => {
     )
 }
 
-export default ReturnEquip
+export default GradReturnEquip

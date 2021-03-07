@@ -6,6 +6,8 @@ import {
     CCardHeader,
     CCol,
     CCollapse,
+    CLabel,
+    CInput,
     CModal,
     CModalTitle,
     CModalHeader,
@@ -14,7 +16,8 @@ import {
     CNav,
     CNavItem,
     CNavLink,
-    CRow 
+    CRow, 
+    CFormGroup
 }   from '@coreui/react';
 
 const DetailFile = () => {
@@ -57,7 +60,8 @@ const DetailFile = () => {
     return (
         <>
             <CCol xs="12" md="12">
-                <h3>Verifikasi Berkas Pendaftaran Wisuda, Tahun : 2021</h3>
+                <h3>Verifikasi Berkas Pendaftaran Wisuda</h3> 
+                <h4>Tahun : </h4>
                 <h4>Periode : #</h4>
             </CCol>
 
@@ -180,7 +184,25 @@ const DetailFile = () => {
                 </CModalHeader>
 
                 <CModalBody>
-                    
+                    <CFormGroup row>
+                        <CCol md="7">
+                            <CLabel htmlFor="date-input">Tanggal Pengambilan Kelengkapan</CLabel>
+                        </CCol>
+
+                        <CCol xs="2" md="5">
+                            <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+                        </CCol>
+                    </CFormGroup>
+
+                    <CFormGroup row>
+                        <CCol md="7">
+                            <CLabel htmlFor="date-input">Nomor Antrian</CLabel>
+                        </CCol>
+
+                        <CCol xs="2" md="5">
+                            <CInput type="text" disabled/>
+                        </CCol>
+                    </CFormGroup>
                 </CModalBody>
 
                 <CModalFooter>

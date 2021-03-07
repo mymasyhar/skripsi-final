@@ -29,12 +29,12 @@ const fields = ['id','nama','fakultas', 'jurusan', 'tgl_pengambilan','aksi', 'st
 
 // import CIcon from '@coreui/icons-react'
 
-const Equip = () => {
+const EquipReturn = () => {
     return (
         <>
             <CRow>
                 <CCol xs="12" md="12">
-                    <h3>Pengambilan Kelengkapan dan Undangan Wisuda</h3>
+                    <h3>Pengembalian Kelengkapan Wisuda</h3>
                     <h4>Tahun : 2021</h4>
                     <h4>Periode : #</h4>
                 </CCol>
@@ -44,11 +44,11 @@ const Equip = () => {
                         <CCardBody>
                             <CNav fill variant="pills">
                                 <CNavItem>
-                                    <CNavLink to="/equip" active>Pengambilan</CNavLink>
+                                    <CNavLink to="/equip">Pengambilan</CNavLink>
                                 </CNavItem>
 
                                 <CNavItem>
-                                    <CNavLink to="/equip-return">Pengembalian</CNavLink>
+                                    <CNavLink to="/equip-return" active>Pengembalian</CNavLink>
                                 </CNavItem>
                             </CNav>
                         </CCardBody>
@@ -89,4 +89,4 @@ const Equip = () => {
     )
 }
 
-export default Equip
+export default EquipReturn
