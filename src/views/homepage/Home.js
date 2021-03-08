@@ -138,30 +138,6 @@ const Home = () => {
                 </CCol>
             </CRow>
 
-
-            {/* <div className="c-app c-default-layout">
-                <div className="c-wrapper">
-                    <CHeader className="">
-                        <CHeaderNav className="ml-md-auto">
-                            <CHeaderNavItem className="px-3" >
-                                <CHeaderNavLink to="/home">Home</CHeaderNavLink>
-                            </CHeaderNavItem>
-
-                            <CHeaderNavItem  className="px-3">
-                                <CHeaderNavLink to="/contact">Kontak</CHeaderNavLink>
-                            </CHeaderNavItem>
-
-                            <CHeaderNavItem className="px-3">
-                                <CHeaderNavLink to="/login">Login</CHeaderNavLink>
-                            </CHeaderNavItem>
-                        </CHeaderNav>
-                    </CHeader>
-                </div>
-                <div className="c-body">
-                    
-                </div>
-            </div> */}
-
         </>
     )
 }
