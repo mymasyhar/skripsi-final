@@ -48,13 +48,13 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Kelengkapan',
     to: '/equip',
-    icon: <CIcon name="cilFolderOpen" customClasses="c-sidebar-nav-icon" />,
+    icon: <CIcon name="cilBriefcase" customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Arsip',
     to: '/archived-file',
-    icon: <CIcon name="cilBriefcase" customClasses="c-sidebar-nav-icon" />,
+    icon: <CIcon name="cilFolderOpen" customClasses="c-sidebar-nav-icon" />,
   },
 
 //admin

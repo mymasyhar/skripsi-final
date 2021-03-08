@@ -23,7 +23,7 @@ const NewDashboard = () => {
                             <CCol>
                                 <CCardBody className="">
                                     <div className="text-left ml-2">
-                                        <img src={'avatars/8.jpg'} alt="admin@bootstrapmaster.com" />
+                                        <img className="rounded-circle" src={'avatars/8.jpg'} alt="admin@bootstrapmaster.com" />
                                     </div>
                                 </CCardBody>
                             </CCol>
@@ -45,11 +45,8 @@ const NewDashboard = () => {
                         </CCardHeader>
                         <CRow md="4">
                             <CCol>
-                                <CCardBody className="mt-5">
+                                <CCardBody className="">
                                     <div className="text-left">
-                                        <h3>Assalamualaikum,</h3>
-                                        <h4>Masyhar Muharam</h4>
-                                        <h4>16523171</h4>
                                     </div>
                                 </CCardBody>
                             </CCol>
@@ -58,7 +55,7 @@ const NewDashboard = () => {
                 </CCol>
 
                 <CCol md="5">
-                    <CCard color="info" className="">
+                    <CCard color="info">
                         <h2 className="text-center text-white mt-2">Panduan</h2>
                         <CCardBody>
                             <CCol col="6" sm="4" md="2" xl className="mb-xl">
@@ -77,7 +74,11 @@ const NewDashboard = () => {
 
                                         <CCollapse show={accordion === 0}>
                                             <CCardBody>
-                                                
+                                                1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+                                                cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
                                             </CCardBody>
                                         </CCollapse>
                                     </CCard>
@@ -96,7 +97,11 @@ const NewDashboard = () => {
 
                                         <CCollapse show={accordion === 1}>
                                             <CCardBody>
-                                                
+                                            1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+                                                cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
                                             </CCardBody>
                                         </CCollapse>
                                     </CCard>
@@ -115,12 +120,16 @@ const NewDashboard = () => {
 
                                         <CCollapse show={accordion === 2}>
                                             <CCardBody>
-                                                
+                                            1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+                                                cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
                                             </CCardBody>
                                         </CCollapse>
                                     </CCard>
 
-                                    <CCard className="mb-0">
+                                    <CCard className="mb-1">
                                         <CCardHeader id="headingFour" color="success">
                                             <CButton 
                                                 block 
@@ -134,7 +143,11 @@ const NewDashboard = () => {
 
                                         <CCollapse show={accordion === 3}>
                                             <CCardBody>
-                                                
+                                            1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+                                                cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
                                             </CCardBody>
                                         </CCollapse>
                                     </CCard>

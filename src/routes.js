@@ -65,8 +65,13 @@ const PeriodicSet   = React.lazy(() => import('./views/admin/PeriodicSet/Periodi
 // const User = React.lazy(() => import('./views/users/User'));
 
 const routes = [
-  //mahasiswa
-    { path: '/', exact: true, name: 'Home', component: Home },
+    //general
+    {path: '/home', name:'Landing Page', component:Home},
+
+
+    //mahasiswa
+    // { path: '/', exact: true, name: 'Home', component: Home },
+    { path: '/', exact:true, name: 'Home', component: NewDashboard },
     { path: '/new-dashboard', name: 'Dashboard', component: NewDashboard },
     { path: '/new-register', name: 'Pendaftaran', component: GradRegister },
     { path: '/new-file-upload', name: 'Unggah Berkas', component: FileUpload },

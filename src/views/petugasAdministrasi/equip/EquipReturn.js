@@ -9,8 +9,7 @@ import {
     CNav,
     CNavItem,
     CNavLink,
-    CRow,
-    CButton
+    CRow
 } from '@coreui/react'
 
 import studentEquip from '../../dummyData/StudentEquip';
