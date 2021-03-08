@@ -15,13 +15,15 @@ import {
     CRow
 } from '@coreui/react'
 
+import {
+    CChartPie
+} from '@coreui/react-chartjs'
+
 import { DocsLink } from 'src/reusable'
 import CIcon from '@coreui/icons-react'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isOpenDropdown, setIsOpenDropdown] = useState(false)
-    const [navbarText, setNavbarText] = useState(false)
 
     return(
         <>
@@ -44,62 +46,98 @@ const Home = () => {
                     </CNavbar>
             </CCard>
 
-            
-            <CCol xs="12" sm="6" md="4">
-                <CCard color="info" className="text-white text-center">
-                    
-                    <CCardBody>
+            <CRow>
+
+                <CCol xs="12" sm="6" md="4" className="ml-3 mb-5">
+                    <CCard color="info" className="text-white text-center">
                         
-                            <h3>Informasi Terkini Pendaftaran Wisuda</h3>
-                        
-                        <CListGroup>
-                            <CListGroupItem color="secondary" className="mb-2">
-                                <CRow className="mb-0">
-                                    <CCol md="3">
-                                        <CIcon name="cilListRich" customClasses="sm" />
-                                    </CCol>
-                                    <CCol md="9">
-                                        <div className=" text-left bold">
-                                            <h4 className="font-weight-bold">Periode</h4>
-                                            <p>1</p>
-                                        </div>
-                                    </CCol>
-                                </CRow>
-                            </CListGroupItem>
+                        <CCardBody>
+                            
+                                <h3>Informasi Terkini Pendaftaran Wisuda</h3>
+                            
+                            <CListGroup>
+                                <CListGroupItem color="secondary" className="mb-4">
+                                    <CRow className="mb-0">
+                                        <CCol md="3">
+                                            <CIcon name="cilListRich" customClasses="sm" />
+                                        </CCol>
+                                        <CCol md="9">
+                                            <div className=" text-left bold">
+                                                <h4 className="font-weight-bold">Periode</h4>
+                                                <p>1</p>
+                                            </div>
+                                        </CCol>
+                                    </CRow>
+                                </CListGroupItem>
 
-                            <CListGroupItem color="secondary" className="mb-2">
-                                <CRow className="mb-0">
-                                    <CCol md="3">
-                                        <CIcon name="cilListRich" customClasses="sm" />
-                                    </CCol>
-                                    <CCol md="9">
-                                        <div className=" text-left">
-                                            <h4 className="font-weight-bold">Tanggal Pelaksanaan</h4>
-                                            <p>1</p>
-                                        </div>
-                                    </CCol>
-                                </CRow>
-                            </CListGroupItem>
+                                <CListGroupItem color="secondary" className="mb-4">
+                                    <CRow className="mb-0">
+                                        <CCol md="3">
+                                            <CIcon name="cilListRich" customClasses="sm" />
+                                        </CCol>
+                                        <CCol md="9">
+                                            <div className=" text-left">
+                                                <h4 className="font-weight-bold">Tanggal Pelaksanaan</h4>
+                                                <p>1</p>
+                                            </div>
+                                        </CCol>
+                                    </CRow>
+                                </CListGroupItem>
 
-                            <CListGroupItem color="secondary" className="mb-2">
-                                <CRow className="mb-0">
-                                    <CCol md="3">
-                                        <CIcon name="cilListRich" customClasses="sm" />
-                                    </CCol>
-                                    <CCol md="9">
-                                        <div className=" text-left">
-                                            <h4 className="font-weight-bold">Jumlah Pendaftar</h4>
-                                            <p>1</p>
-                                        </div>
-                                    </CCol>
-                                </CRow>
-                            </CListGroupItem>
+                                <CListGroupItem color="secondary" className="mb-4">
+                                    <CRow className="mb-0">
+                                        <CCol md="3">
+                                            <CIcon name="cilListRich" customClasses="sm" />
+                                        </CCol>
+                                        <CCol md="9">
+                                            <div className=" text-left">
+                                                <h4 className="font-weight-bold">Jumlah Pendaftar</h4>
+                                                <p>1</p>
+                                            </div>
+                                        </CCol>
+                                    </CRow>
+                                </CListGroupItem>
 
-                        </CListGroup>
-                    </CCardBody>
-                </CCard>
-            </CCol>
+                            </CListGroup>
+                        </CCardBody>
+                    </CCard>
+                </CCol>
                 
+                <CCol xs="12" sm="6" md="7">
+                    <CCard color="info" className="text-white text-center">
+                        <CCardBody className="cols-2">
+                            <h3>Jumlah Pendaftar Wisuda Periode 1 berdasarkan Fakultas</h3>
+
+                            <CChartPie
+                                datasets={[
+                                {
+                                    backgroundColor: [
+                                    '#41B883',
+                                    '#E46651',
+                                    '#00D8FF',
+                                    '#DD1B16'
+                                    ],
+                                    data: [40, 20, 80, 10]
+                                }
+                                ]}
+                                labels={['VueJs', 'EmberJs', 'ReactJs', 'AngularJs']}
+                                options={{
+                                tooltips: {
+                                    enabled: true
+                                }
+                                }}
+                            />
+                        </CCardBody>
+                    </CCard>
+
+                    <CCard>
+                        <CCardBody>
+                            <h3>Jumlah Pendaftar Wisuda Periode 1 berdasarkan Fakultas</h3>
+                        </CCardBody>
+                    </CCard>
+                </CCol>
+            </CRow>
+
 
             {/* <div className="c-app c-default-layout">
                 <div className="c-wrapper">
